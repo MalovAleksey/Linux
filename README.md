@@ -13,3 +13,6 @@
  операционная система не может получить к ним доступ.
 
 **/user/lib/systemd/system** - config file service
+
+**arping** -c 1 -I eth1 192.168.1.10 - отправляет arp запрос.
+
