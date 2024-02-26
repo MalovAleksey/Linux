@@ -18,3 +18,36 @@
 
 **tcpdump** -i any arp -nn -v -A -e - перехватывает сетевой трафик проходящий через интерфейс.
 
+**ls -l**
+
+**/etc/passwd**
+
+**/etc/group**
+
+**/etc/sudoers** 
+
+**visudo** - редактировать файл **/etc/sudoers**
+
+**pam _ ssh _ agent_auth** - пакет PAM 
+
+**Пример sudoers**
+
+%wheel ALL = (ALL) ALL - член группы wheel может запустить любую программу с паролем.
+
+MYSQL_ADMINS ALL = (mysql) NOPASSWD: ALL - администраторы mysql могут запускать любую команду под пользователем mysql без пароля.
+
+ADMINS ALL =  (ALL) NOPASSWD: /usr/sbin/logrotate - администраторы могут запускать команду logrotate как обычный пользователь без пароля.
+
+
+**sudo systemctl set-default multi-user.target** - изменить цель загрузки по умолчанию.
+
+**sudo systemctl isolate multi-user.tarqet/rescue** - изменить текущую цель загрузки.
+
+**systemctl list-units --type = target** - посмотреть доступные цели загрузки.
+
+**passwd** - изменение пароля пользователя.
+
+
+
+
+
