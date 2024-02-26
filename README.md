@@ -28,6 +28,8 @@
 
 **visudo** - редактировать файл **/etc/sudoers**
 
+sudo visudo -cf /etc/sudoers - проверить файл на соответствие синтаксиса.
+
 **pam _ ssh _ agent_auth** - пакет PAM 
 
 **Пример sudoers**
@@ -47,6 +49,17 @@ ADMINS ALL =  (ALL) NOPASSWD: /usr/sbin/logrotate - администраторы
 
 **passwd** - изменение пароля пользователя.
 
+passwd -1 - блокирует учетную запись добавляя знак ! к зашифрованному паролю.
+
+**SCP**
+
+scp /home/user/file root@timeweb:/root/ - копирование туда.
+
+scp -r /home/user/photos root@timeweb:/root/ - копирование директории.
+
+scp -r /home/user/photos root@timeweb:/root/ - копирование директории.
+
+scp root@timeweb:/root/file /home/user/ - копирование обратно
 
 
 
