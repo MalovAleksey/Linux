@@ -78,7 +78,9 @@ ps lax
 
 ps aux | grep -v grep | grep sshd - удалить из вывода сам grep
 
-pidof nano - выведет PID всех процессов nano
+**pidof nano** - выведет PID всех процессов nano
+
+**pgrep nano** - выведет PID всех процессов nano
 
 
 
