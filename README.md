@@ -49,7 +49,9 @@ ADMINS ALL =  (ALL) NOPASSWD: /usr/sbin/logrotate - администраторы
 
 **passwd** - изменение пароля пользователя.
 
-passwd -1 - блокирует учетную запись добавляя знак ! к зашифрованному паролю.
+passwd -l - блокирует учетную запись добавляя знак ! к зашифрованному паролю.
+
+sudo passwd -u root - разблокировать учетную запись пользователя root.
 
 **SCP**
 
@@ -60,6 +62,23 @@ scp -r /home/user/photos root@timeweb:/root/ - копирование дирек
 scp -r /home/user/photos root@timeweb:/root/ - копирование директории.
 
 scp root@timeweb:/root/file /home/user/ - копирование обратно
+
+
+## Управление процессами
+
+kill pid
+
+kilall nano
+
+**PS**
+
+ps aux
+
+ps lax
+
+ps aux | grep -v grep | grep sshd - удалить из вывода сам grep
+
+pidof nano - выведет PID всех процессов nano
 
 
 
