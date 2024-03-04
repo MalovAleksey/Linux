@@ -205,9 +205,13 @@ $ echo 'I speak ${mylang}.'
 
 I speak $(mylang). 
 
-$ echo "Тhere are 'wc -1 < /etc/passwd" lines in the passwd file."
+**Бэктики**
+
+$ echo "Тhere are `wc -1 < /etc/passwd` lines in the passwd file." -в бэктиках выполнится командв и выведется её результат.
 
 There are 28 lines in the passwd file. 
+
+
 
 
 
