@@ -126,7 +126,7 @@ ionice
 
 sudo strace -р 5810
 
-truss ср /etc/passwd /Ьпр/рw
+truss ср /etc/passwd /Mgh/рw
 
 **cron** **systemd timers**
 
@@ -147,7 +147,7 @@ truss ср /etc/passwd /Ьпр/рw
 
 **file** **ls -ld** - посмотреть тип файла. 
 
-rm -i - удалить с подтверждением.
+**rm -i** - удалить с подтверждением.
 
 **ln** - создать жескую ссылку.
 
@@ -185,9 +185,29 @@ rm -i - удалить с подтверждением.
 
   **mkdir foo; cd foo; touch file1** - последовательное выполнение нескольких команд.
 
+Присвоение переменных
 
+**variable=1 
 
+echo ${variable}
 
+1**
+
+**Пример с кавычками**
+
+$ mylang="Pennsylvania Dutch"
+
+$ echo "I speak ${mylang}."
+
+I speak Pennsylvania Dutch.
+
+$ echo 'I speak ${mylang}.'
+
+I speak $(mylang). 
+
+$ echo "Тhere are 'wc -1 < /etc/passwd" lines in the passwd file."
+
+There are 28 lines in the passwd file. 
 
 
 
