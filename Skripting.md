@@ -22,6 +22,10 @@ if
 
 ![script](https://github.com/MalovAleksey/Linux/blob/main/skript/2024-03-05_15-02-01.png).
 
+**Регулярные выражения**
+
+![scrin](https://github.com/MalovAleksey/Linux).
+
 **case - ДОПИСАТЬ**
 
 ### Цыклы
