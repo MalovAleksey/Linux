@@ -24,7 +24,7 @@ if
 
 **Регулярные выражения**
 
-![scrin](https://github.com/MalovAleksey/Linux).
+![scrin](https://github.com/MalovAleksey/Linux/blob/main/skript/2024-03-05_15-32-58.png).
 
 **case - ДОПИСАТЬ**
 
