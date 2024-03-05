@@ -263,7 +263,7 @@ There are 28 lines in the passwd file.
 
 **printrnv** - посмотреть все переменные.
 
-**export EDITOR=/user/bin/nano** - назначитьзначение переменной среды.
+**export EDITOR=/user/bin/nano** - назначить значение переменной среды.
 
 
 
