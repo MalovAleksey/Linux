@@ -182,6 +182,8 @@ if
 
 ![scrin](https://github.com/MalovAleksey/Linux/blob/main/skript/2024-03-05_14-56-34.png).
 
+![script](https://github.com/MalovAleksey/Linux/blob/main/skript/2024-03-05_15-02-01.png).
+
 **STDIN(0)** ввод **STDOUT(1)** - вывод в терминал **STDERR(2)**- ошибки
 
 **>** - записать в файл **>>** - дописать в файл **2>** - направить ошибки.
