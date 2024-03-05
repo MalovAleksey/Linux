@@ -159,6 +159,9 @@ truss ср /etc/passwd /Mgh/рw
 
 **chqrp group /file** - поменять группу.
 
+# Управление пользователями
+
+
 
 
 
