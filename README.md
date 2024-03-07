@@ -35,7 +35,7 @@ ADMINS ALL =  (ALL) NOPASSWD: /usr/sbin/logrotate - администраторы
 
 **sudo systemctl isolate multi-user.tarqet/rescue** - изменить текущую цель загрузки.
 
-**systemctl list-units --type = target** - посмотреть доступные цели загрузки.
+**systemctl list-units --type=target** - посмотреть доступные цели загрузки.
 
 **passwd** - изменение пароля пользователя.
 
@@ -235,5 +235,7 @@ ugo+rwx - разрешить все для всех;
 
 **/etc/login.defs** - настройки useradd поумолчанию.
 
+
+# Журналирование
 
 
