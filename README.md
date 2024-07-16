@@ -301,6 +301,18 @@ systemd-journal-upload — демон, дублирующий записи жу�
 
 **/etc/sysctl.conf** - настройки интерфейсов (запрет ICMP и тд)
 
+**ping**, **tracerout (-n)**, **mtr** 
+
+**tcpdump -i (-n, -v, -vv, -w, -s) eth0**
+
+**Wireshark**
+
+**iperf**
+
+**iptables**
+
+
+
 
 
 
