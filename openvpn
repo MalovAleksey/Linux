@@ -1,1 +1,1 @@
-
+bash <(curl -fsS https://as-repository.openvpn.net/as/install.sh)
