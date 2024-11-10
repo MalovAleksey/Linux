@@ -10,22 +10,31 @@ echo "$color - $ColorCode"
 KernelVersion=$(uname -a)
 
 echo "$KernelVersion"
-
+echo ""
+echo "Математические операции"
+echo ""
 OneNumber=2
 TwoNumber=4
 
+echo ""
+
+echo 'summ=$(($OneNumber + $TwoNumber))'
+echo ""
 summ=$(($OneNumber + $TwoNumber))
 
 #echo "$summ"
 
+echo 'diff=$(($OneNumber - $TwoNumber))'
+echo ""
 diff=$(($OneNumber - $TwoNumber))
 
 #echo "$diff"
-
+echo 'mult=$(($OneNumber * $TwoNumber))'
+echo ""
 mult=$(($OneNumber * $TwoNumber))
 
 #echo "$mult"
-
+echo 'div=$(($OneNumber / $TwoNumber))'
 div=$(($OneNumber / $TwoNumber))
 
 #echo "$div"
@@ -143,7 +152,7 @@ echo "Индексы элементов в массиве: ${!array[@]}"
 echo ${array[@]}
 
 echo ""
-echo "if"
+echo "Оператор if"
 
 if uname
 then
@@ -221,13 +230,13 @@ echo ""
 echo "
 =  - равно
 != - не равно
-<  - меньше
->  - больше
+\<  - меньше
+\>  - больше
 -n - истина если длинна строки не нулевая
 -z - истина если длинна строки нулевая
 "
-string1="test1"
-string2="test"
+string1="test"
+string2="test1"
 string3="test1"
 string4=""
 
@@ -235,14 +244,61 @@ if [ $string1 = $string2 ]
 then
         echo "$string1 равно $string2"
 
-elif  [ $string1 > $string2 ]
+elif  [ $string1 \> $string2 ]
         then
-        echo "$num1 больше $num2"
+        echo "$string1 больше $string2"
 
-elif  [ $string1 < $string2 ]
+elif  [ $string1 \< $string2 ]
         then
-        echo "$num1 меньше $num2"
+        echo "$string1 меньше $string2"
 elif [ -z $string1 ]
 	then
 	echo "string1 пустая строка"
 fi
+
+echo ""
+echo  "Сравнение файлов"
+echo ""
+
+
+ echo "
+
+-d -  истина если файл существует и является директорией
+-e -  истина если существует файл 
+-f -  истина если файл существует и является файлом
+-r -  истина если  файл существует и доступен для чтения
+-s -  истина если файл существует и он пустой
+-w -  истина если файл существует и доступен для записи 
+-x -  истина если файл существует и доступен для исполнения
+-nt - проверяется является ли файл более новым по сравнению с другим
+-ot - проверяется является ли файл более старым по сравнению с другим
+-O  - проверяет что файл существует и его владелец текущий пользователь
+-G  - проверяет что файл существует идентификатор группы  соответствует идентификатору группы пользователя
+"
+
+echo ""
+
+homeDir=$HOME
+scriptsDir=/Bash/scripts
+
+if  [ -d $homeDir  ]
+then 
+	echo "Yes"
+
+else
+	echo "No"
+
+fi
+
+echo ""
+
+if  [ "/home/tandem/bash/skript/tar1/1.md" -ot "/home/tandem/bash/skript/tar1/10.md"  ]
+then 
+        echo "Yes"
+
+else
+        echo "No"
+
+fi
+
+
