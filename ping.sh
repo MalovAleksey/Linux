@@ -4,13 +4,17 @@ INTERFACE=$2
 
 trap 'echo "Ping exit (Ctrl-C)"; exit 1' 2
 
-for SUBNET in {0..255}
+for SUBNET in {1..1}
 do
 
-for HOST in {1..255}
+for HOST in {1..5}
 do
-echo "IP:$PREFIX.$SUBNET.$HOST"
-arping -c 3 -I $INTERFACE $PREFIX"."$SUBNET"."$HOST 2> /dev/null
+#echo "IP : $PREFIX.$SUBNET.$HOST"
+ping -c 1 -I $INTERFACE $PREFIX"."$SUBNET"."$HOST  2> /dev/null  1> /dev/null
+if  [[ $? -eq 0 ]];
+then
+host=$(echo "$PREFIX.$SUBNET.$HOST") && getent hosts $PREFIX"."$SUBNET"."$HOST 1>> /home/admin/network
+fi
+done
+done
 
-done
-done
