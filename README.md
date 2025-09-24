@@ -167,6 +167,9 @@ ugo+rwx - разрешить все для всех;
 
 **rmdir** - удалить директорию.
 
+Клонировать репозиторий Altlinux
+**rsync -avzh  --stats --delete --progress rsync.altlinux.org::ALTLinux/p10/ /srv/public/mirror/p10/**
+
 # Управление пользователями
 
 **loginctl** - доменные пользователи в системе.
