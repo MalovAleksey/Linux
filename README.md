@@ -364,6 +364,16 @@ systemd-journal-upload — демон, дублирующий записи жу�
 **sudo fsfreeze --unfreeze <точка монтирования>** - разморозить файловую систему.
 
 
+**Обновить сертификаты в Astra Linux:**
+* Каталоги сертификатов:
+  * `/usr/local/share/ca-certificates/`
+  * `/etc/ssl/certs/`
+```bash
+sudo update-ca-certificates
+
+# Псевдографическая утилита
+dpkg-reconfigure ca-certificates
+```
 
 
 
