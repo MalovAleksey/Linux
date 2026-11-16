@@ -378,7 +378,7 @@ dpkg-reconfigure ca-certificates
 ```bash
 echo -e 'Acquire::https::Verify-Peer "false";\nAcquire::https::Verify-Host "false";' | sudo tee /etc/apt/apt.conf.d/99verify-peer.conf
 
-```bash
+```
 
 
 
